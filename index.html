@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Katalog Buku Online</title>
+  <link rel="stylesheet" href="css.css" />
+</head>
+<body>
+  <header>
+    <h1>Katalog Buku Online</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="kategori.html">Kategori</a></li>
+        <li><a href="testimoni.html">Testimoni</a></li>
+        <li><a href="kontak.html">Kontak</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="search-filter">
+      <input type="text" id="searchInput" placeholder="Cari buku..." />
+      <select id="genreFilter">
+        <option value="all">Semua Genre</option>
+        <option value="fiksi">Fiksi</option>
+        <option value="nonfiksi">Non-Fiksi</option>
+        <option value="komik">Komik</option>
+      </select>
+    </section>
+
+    <section id="bookList" class="book-list">
+      <!-- Daftar Buku -->
+    </section>
+    
+    <div class="book-section">
+    <div class="book-category">BUKU TERPOPULER</div>
+    <div class="book-list">
+      <div class="book-item">
+        <img src="https://via.placeholder.com/150x225?text=Buku+1" alt="Buku 1">
+        <p>Judul Buku 1</p>
+      </div>
+      <div class="book-item">
+        <img src="https://via.placeholder.com/150x225?text=Buku+2" alt="Buku 2">
+        <p>Judul Buku 2</p>
+      </div>
+      <div class="book-item">
+        <img src="https://via.placeholder.com/150x225?text=Buku+3" alt="Buku 3">
+        <p>Judul Buku 3</p>
+      </div>
+    </div>
+  </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Katalog Buku Online</p>
+  </footer>
+
+  <script src="js.js"></script>
+</body>
+</html>
