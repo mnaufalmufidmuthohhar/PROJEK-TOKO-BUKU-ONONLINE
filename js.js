@@ -37,3 +37,30 @@ document.addEventListener("DOMContentLoaded", function () {
     renderBooks();
   }
 });
+
+// untuk tampilan detail buku
+let currentSlide = 0;
+function showSlide(n) {
+  const slides = document.querySelectorAll(".book-item");
+  slides.forEach((slide) => (slide.style.display = "none"));
+  slides[n].style.display = "block";
+}
+
+// Testimoni Slider Otomatis
+let testimoniIndex = 0;
+function nextTestimoni() {
+  const items = document.querySelectorAll(".testimoni-item");
+  items[testimoniIndex].style.display = "none";
+  testimoniIndex = (testimoniIndex + 1) % items.length;
+  items[testimoniIndex].style.display = "block";
+}
+setInterval(nextTestimoni, 3000);
+
+// Validasi Form kontak
+document.querySelector("form").addEventListener("submit", (e) => {
+  e.preventDefault();
+  alert("Pesan terkirim! Kami akan menghubungi Anda segera.");
+});
+
+// Tombol Beli 
+<button onclick="alert('Fitur pembelian belum tersedia.')">Beli Sekarang</button>
